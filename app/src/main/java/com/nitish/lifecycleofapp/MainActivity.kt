@@ -36,4 +36,9 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         Toast.makeText(this,"onDestroy",Toast.LENGTH_SHORT).show()
     }
+
+    override fun onRestart() {
+        super.onRestart()
+        Toast.makeText(this,"onRestart",Toast.LENGTH_SHORT).show()
+    }
 }
